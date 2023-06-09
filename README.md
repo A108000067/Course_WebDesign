@@ -11,9 +11,9 @@ $_SESSION['userName'] = "Kao";
 ```
 * 讀取 
 ```
-if(! isset($_SESSION['name'])) {
-    header('Location: index.php');
-}
+<?php
+echo $_SESSION['test'];
+?>
 ```
 * Cookie
 * 設定
