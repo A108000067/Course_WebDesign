@@ -1,6 +1,33 @@
 # Course_WebDesign
 
-
+## W16_0609 Session&Cookie
+* Session
+* 設定
+```
+<?php
+session_start();
+$_SESSION['userName'] = "Kao";
+?>
+```
+* 讀取 
+```
+if(! isset($_SESSION['name'])) {
+    header('Location: index.php');
+}
+```
+* Cookie
+* 設定
+```=
+<?php
+     setcookie( "test", "Good_Idea", time()+3600); //變數為test，變數值為Good_Idea，存活時間一小時(3600秒) 
+?>
+```
+* 讀取
+```=
+<?php
+     echo $_COOKIE["test"]; //讀取變數
+?>
+```
 ## W15_0602 模擬考
 linux系統裡面,作答壓縮和上傳方式(終端機terminal指令):
 1. 壓縮整個資料夾: `sudo tar -cvf 編號_學號.tar 要壓縮的資料夾/*`
